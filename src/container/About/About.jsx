@@ -30,9 +30,9 @@ const About = () => {
   return (
     <>
     <h2 className='head-text'>
-      I Know That <span>Good Dev</span>
+      Code with <span>Clarity</span>
       <br />
-      means <span>Good Business</span>
+      Build with <span>Purpose</span>
     </h2>
 
     <div className="app__profiles">

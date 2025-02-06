@@ -36,8 +36,9 @@ const Header = () => {
           </div>
 
           <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer</p>
-            <p className="p-text">Problem Solver</p>
+            <p className="p-text">MERN Developer</p>
+            <p className="p-text">Django Developer</p>
+            <p className="p-text">ML/DL Enthusiast</p>
           </div>
         </div>
       </motion.div>
@@ -63,7 +64,7 @@ const Header = () => {
       whileInView={scaleVariants.whileInView}
       className='app__header-circles'
       >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => (
+        {[images.django, images.mern, images.opencv].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="circle" />
           </div>

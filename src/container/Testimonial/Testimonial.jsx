@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
-import { AppWrap, MotionWrap } from '../../wrapper';
+import { AppWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Testimonial.scss';
 
@@ -34,6 +34,9 @@ const Testimonial = () => {
     <>
       {testimonials.length && (
         <>
+
+          <h2 className='head-text'>Coding & Learning Milestones</h2>
+
           <div className="app__testimonial-item app__flex">
             <img src={urlFor(test.imgurl)} alt={test.name} />
             <div className="app__testimonial-content">

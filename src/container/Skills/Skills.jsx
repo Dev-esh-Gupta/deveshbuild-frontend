@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {motion} from 'framer-motion';
-import { Tooltip } from 'react-tooltip';
+// import { Tooltip } from 'react-tooltip';
 
 import {AppWrap, MotionWrap} from '../../wrapper';
 import {urlFor, client} from '../../client'
@@ -9,18 +9,18 @@ import './Skills.scss'
 
 const Skills = () => {
 
-  const [experience, setExperience] = useState([]);
+  // const [experience, setExperience] = useState([]);
   const [skills, setSkills] = useState([])
 
   useEffect(() => {
-      const query = '*[_type == "experiences"]';
+      // const query = '*[_type == "experiences"]';
       const skillQuery = '*[_type == "skills"]';
       
-      client.fetch(query)
-      .then((data) => {
-        setExperience(data);
-      }
-      )
+      // client.fetch(query)
+      // .then((data) => {
+      //   setExperience(data);
+      // }
+      // )
       client.fetch(skillQuery)
       .then((data) => {
         setSkills(data);
@@ -31,7 +31,8 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className='head-text'>Skills & Experience</h2>
+      {/* <h2 className='head-text'>Skills & Experience</h2> */}
+      <h2 className='head-text'>My Skills</h2>
 
       <div className="app__skills-container">
         <motion.div
@@ -51,7 +52,7 @@ const Skills = () => {
             </ motion.div>
           ))}
         </motion.div>
-        <motion.div className='app__skills-exp'>
+        {/* <motion.div className='app__skills-exp'>
           {console.log('here ', experience.works)}
           {experience?.map((experience) => (
             <motion.div
@@ -91,7 +92,7 @@ const Skills = () => {
             
           ))}
 
-        </motion.div>
+        </motion.div> */}
       </div>
     </>
   )

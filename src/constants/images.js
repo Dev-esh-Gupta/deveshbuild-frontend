@@ -34,6 +34,9 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import mern from '../assets/mern.png';
+import django from '../assets/django.png';
+import opencv from '../assets/opencv.png';
 
 export default {
   email,
@@ -69,4 +72,7 @@ export default {
   nb,
   skype,
   spotify,
+  mern,
+  django,
+  opencv
 };
